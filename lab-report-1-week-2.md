@@ -2,7 +2,7 @@
 
 Hello students of CS15L. It has come to my attention that you need some assistance in remote access.
 
-Fret not, for in this tutorial, I will show you how to access your CS15L account and get started with remote coding.
+Fret not, for in this tutorial, I will show you how to access your CS15L account and get started with remote acess.
 
 ---
 ## **Visual Studio Code**
