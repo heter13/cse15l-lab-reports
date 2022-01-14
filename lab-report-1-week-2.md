@@ -231,6 +231,16 @@ It should look similar to this when everything is done:
 
 ## **Optimizing remote running**
 
+Now that you're able to automatically connect, you can make your life even easier by using tricks like these:
+
+- You can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit.
+- You can use semicolons to run multiple commands on the same line in most terminals.
+- You can use the up-arrow on your keyboard to recall the last command that was run.
+
+Here is an example where changes were made to WhereAmI.java, then sent to the course account and ran:
+
+![RemoteEfficiency](https://i.gyazo.com/bea48c0fb6449dbbecfc95f368acce2a.png)
+
 ---
 
 ## **That's a wrap!**
