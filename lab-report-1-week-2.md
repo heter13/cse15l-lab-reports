@@ -10,7 +10,7 @@ Fret not, for in this tutorial, I will show you how to access your CS15L account
 One of the tools you need to get started will be Visual Studio Code. This is an IDE (Integrated development environment).
 This is essentially the home base for all operations.
 
-Go to [this page](https://code.visualstudio.com/) and download VSC for whatever operating system you are running on. If your system is not supported, let the staff know and they'll work out alternatives for you.
+Go to [*this page*](https://code.visualstudio.com/) and download VSC for whatever operating system you are running on. If your system is not supported, let the staff know and they'll work out alternatives for you.
 
 
 Your VSC should like something like this when you launch.
@@ -22,9 +22,9 @@ Your VSC should like something like this when you launch.
 
 In order to connect to a remote computer, you'll need access to your course-specific account.
 
-> Firstly, if you're on windows, you need to install [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). This will allow you to connect to other computers that have the same type of account.
+> Firstly, if you're on windows, you need to install [**OpenSSH**](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). This will allow you to connect to other computers that have the same type of account.
 
-In order to get access to your course account, you'll need to look up your account [here](https://sdacs.ucsd.edu/~icc/index.php).
+In order to get access to your course account, you'll need to look up your account [*here*](https://sdacs.ucsd.edu/~icc/index.php).
 
 The page should look something like this, and you can fill out either field.
 
@@ -54,3 +54,8 @@ Congratulations, you are now able to connect to your CS15L account using the pas
 ## **Connecting Remotely**
 
 Now that your environment and account are ready to go, go into Visual Studio Code and open a terminal. This can be done by going to the top bar of the program, clicking on terminal, and clicking on new terminal. (This can also be done with the shortcut CTRL + SHIFT + ` )
+
+It looks a little something like *this*:
+
+![VSCTerminal](https://i.gyazo.com/3200fd512395e5b7dc399c84676d9f19.png)
+
