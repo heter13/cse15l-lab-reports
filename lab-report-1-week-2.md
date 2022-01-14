@@ -53,7 +53,7 @@ Congratulations, you are now able to connect to your CS15L account using the pas
 ---
 ## **Connecting Remotely**
 
-> Here is the guide in case you'd like to follow that instead: https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host
+> Here is the guide in case you'd like to follow that instead: [https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host)
 
 Now that your environment and account are ready to go, go into Visual Studio Code and open a terminal. This can be done by going to the top bar of the program, clicking on terminal, and clicking on new terminal. (This can also be done with the shortcut CTRL + SHIFT + ` )
 
@@ -84,7 +84,7 @@ Now, it should prompt your password after you type and enter yes, and once you e
 Here is the entire interaction:
 
 ```
-ssh cs15lwi22aep@ieng6.ucsd.edu
+⤇ ssh cs15lwi22aep@ieng6.ucsd.edu
 Password: 
 Last login: Thu Jan 13 09:06:52 2022 from 108-82-164-140.lightspeed.irvnca.sbcglobal.net
 quota: No filesystem specified.
@@ -134,7 +134,20 @@ Try running these commands on your computer and on the server.
 
 ## **Moving files with SCP**
 
-Now that you've had some time to experiment with commands on the terminal, let's work on transferring files from one computer to the other. 
+Now that you've had some time to experiment with commands on the terminal, let's work on transferring files from one computer to the other. This is important as it is likely what you will be doing when working remotely.
+
+To begin, we'll need the *scp* command. This should always be run on your computer (Log out of ieng6). To test this out, create a file on your computer called **WhereAmI.java**. Then, copy these contents into it:
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
 
 
 
