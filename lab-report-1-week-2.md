@@ -176,7 +176,56 @@ Your terminal should look something like this:
 
 ## **Setting an SSH Key**
 
+As you may have experienced, it is a pain to have to enter your password each time you try to remotely connect. The solution to that is an ssh key.
 
+To begin, open the terminal and run the command:
+
+`ssh-keygen`
+
+It will begin to generate prompts, which you can just continuously press enter to end up with something like this:
+
+```
+# on client (your computer)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/joe/.ssh/id_rsa): /Users/joe/.ssh/id_rsa
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/joe/.ssh/id_rsa.
+Your public key has been saved in /Users/joe/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+
+Now that your key has been generated, you need to copy the public key over to the ieng6 servers. To do this, connect to your course account.
+
+```
+$ ssh cs15lwi22zz@ieng6.ucsd.edu
+Password:
+# now on server
+$ mkdir .ssh
+$ exit
+# back on client
+$ scp /Users/username/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
+# You use your username and the path you saw in the command above
+```
+Running these commands will allow you to be able to connect to your course account by just using ssh!
+
+It should look similar to this when everything is done:
+
+![SSHKeyImage](https://i.gyazo.com/ec653dd91148dbd7057228e7ad6786b6.png)
 
 ---
 
