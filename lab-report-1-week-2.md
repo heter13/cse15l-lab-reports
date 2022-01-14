@@ -115,10 +115,8 @@ Commands to try:
 
 - cd ~
 - cd
-- ls 
-- lat
-- ls 
-- a
+- ls -lat
+- ls -a
 - ls `directory` where `directory` is /home/linux/ieng6/cs15lwi22/cs15lwi22abc, where *abc* is one of the other group members’ username
 - cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
 - cat /home/linux/ieng6/cs15lwi22/public/hello.txt
@@ -129,6 +127,10 @@ Try running these commands on your computer and on the server.
 >To log out of the server, use 
 >- CTRL + D
 >- Exit
+
+Here is an example of some commands being ran:
+
+![Commands](https://i.gyazo.com/11f2f8211e69c4c738782409c3d1f7f7.png)
 
 ---
 
@@ -148,12 +150,33 @@ class WhereAmI {
   }
 }
 ```
+> Skip this next step if you don't have java installed on your computer
 
+Now, compile and run the program using *javac* and *java*. 
 
+You should see your operating system, system username, home directory, and file directory.
+
+It should look similar to this:
+
+![WhereAmI.java](https://i.gyazo.com/7a0ef62dc58057e4d7b99d94d33e2308.png)
+
+Now, in the same directory as the file you created, run this command in the terminal:
+
+`scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/`
+
+Again, you'll be prompted to enter your password. (Make sure to change the quarter and specific letters again)
+
+Now, reconnect to the ieng6 computer and use the ls command to see the files. WhereAmI.java should be there, and you can compile and run it remotely!
+
+Your terminal should look something like this:
+
+![WhereAmITerminal](https://i.gyazo.com/452ad9e51cb3925664d9ae75db8ddf74.png)
 
 ---
 
 ## **Setting an SSH Key**
+
+
 
 ---
 
