@@ -65,8 +65,7 @@ Once your terminal is open, initiate the connection to a remote computer through
 
 **`ssh cs15lwi22zz@ieng6.ucsd.edu`**
 
-where wi22 will be replaced by your quarter (i.e. fa2023) and zz is replaced by your 15L account's letters.
-
+where *wi22* will be replaced by your quarter (i.e. fa2023) and *zz* is replaced by your 15L account's letters.
 
 Your terminal should look like this, including the warning message as you're accessing this for the first time:
 
@@ -124,9 +123,18 @@ Commands to try:
 - cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
 - cat /home/linux/ieng6/cs15lwi22/public/hello.txt
 
+Try running these commands on your computer and on the server.
+
+
+>To log out of the server, use 
+>- CTRL + D
+>- Exit
+
 ---
 
 ## **Moving files with SCP**
+
+Now that you've had some time to experiment with commands on the terminal, let's work on transferring files from one computer to the other. 
 
 
 
