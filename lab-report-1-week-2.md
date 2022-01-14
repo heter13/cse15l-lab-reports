@@ -53,9 +53,17 @@ Congratulations, you are now able to connect to your CS15L account using the pas
 ---
 ## **Connecting Remotely**
 
+> Here is the guide in case you'd like to follow that instead: https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host
+
 Now that your environment and account are ready to go, go into Visual Studio Code and open a terminal. This can be done by going to the top bar of the program, clicking on terminal, and clicking on new terminal. (This can also be done with the shortcut CTRL + SHIFT + ` )
 
 It looks a little something like *this*:
 
-![VSCTerminal](https://i.gyazo.com/3200fd512395e5b7dc399c84676d9f19.png)
+![VSCTerminal](https://i.gyazo.com/644d94ecd9a053178272bbb4da6e6290.png)
+
+Once your terminal is open, initiate the connection to a remote computer through the command :
+
+`ssh cs15lwi22zz@ieng6.ucsd.edu`
+
+where wi22 will be replaced by your quarter (i.e. fa2023) and zz is replaced by your 15L account's letters.
 
