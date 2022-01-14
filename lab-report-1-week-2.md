@@ -63,7 +63,85 @@ It looks a little something like *this*:
 
 Once your terminal is open, initiate the connection to a remote computer through the command :
 
-`ssh cs15lwi22zz@ieng6.ucsd.edu`
+**`ssh cs15lwi22zz@ieng6.ucsd.edu`**
 
 where wi22 will be replaced by your quarter (i.e. fa2023) and zz is replaced by your 15L account's letters.
 
+
+Your terminal should look like this, including the warning message as you're accessing this for the first time:
+
+```
+⤇ ssh cs15lwi22zz@ieng6.ucsd.edu
+
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Don't worry about the warning, as again, you are connecting for the first time. If this message appears again even though you've connected to that specific host before, be careful. This [explanation](https://superuser.com/questions/421074/ssh-the-authenticity-of-host-host-cant-be-established/421084#421084) details why.
+
+Now, it should prompt your password after you type and enter yes, and once you enter your password that you reset, you should be connected to a remote computer!
+
+Here is the entire interaction:
+
+```
+ssh cs15lwi22aep@ieng6.ucsd.edu
+Password: 
+Last login: Thu Jan 13 09:06:52 2022 from 108-82-164-140.lightspeed.irvnca.sbcglobal.net
+quota: No filesystem specified.
+Hello cs15lwi22aep, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   18:30:01   30  2.26,  2.29,  2.33
+ieng6-202   18:30:01   19  2.35,  2.37,  2.24
+ieng6-203   18:30:01   14  1.89,  2.09,  1.92
+
+ 
+Thu Jan 13, 2022  6:30pm - Prepping cs15lwi22
+[cs15lwi22aep@ieng6-203]:~:2$ 
+```
+
+---
+
+## **Testing Commands**
+
+Now that you have succcessfully connected to a remote computer, it's time to try running some commands on the command line!
+
+This is a time for you to toy around and try to understand commands, so have at it!
+
+Commands to try:
+
+- cd ~
+- cd
+- ls 
+- lat
+- ls 
+- a
+- ls `directory` where `directory` is /home/linux/ieng6/cs15lwi22/cs15lwi22abc, where *abc* is one of the other group members’ username
+- cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
+- cat /home/linux/ieng6/cs15lwi22/public/hello.txt
+
+---
+
+## **Moving files with SCP**
+
+
+
+---
+
+## **Setting an SSH Key**
+
+---
+
+## **Optimizing remote running**
+
+---
+
+## **That's a wrap!**
+
+I hope you were able to successfully follow this tutorial! If you get stuck anywhere, feel free to ask a TA for help. 
+
+That's all, enjoy CS15L!
