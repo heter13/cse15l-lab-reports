@@ -63,7 +63,7 @@ It looks a little something like *this*:
 
 Once your terminal is open, initiate the connection to a remote computer through the command :
 
-**`ssh cs15lwi22zz@ieng6.ucsd.edu`**
+`ssh cs15lwi22zz@ieng6.ucsd.edu`
 
 where *wi22* will be replaced by your quarter (i.e. fa2023) and *zz* is replaced by your 15L account's letters.
 
