@@ -48,5 +48,17 @@ The previous code change worked to remove images, but it was contingent on there
 
 ---
 
+The third code change also again comes from the MarkdownParse file and test file.
 
+The code change can be found [*here*](https://github.com/heter13/markdown-parse/commit/5675aab158f4259f75460be93c18b667507836af#diff-c703a0ec03474d601c6bf846740b293e0538bccf38d5f677a302457479e9c652).
 
+The code breaking file can be found [*here*](https://github.com/heter13/markdown-parse/commit/5e02beedf9c2ba007102dc0018e2b26091afece4#diff-d902b3a6dba925548b7ea18ffb80dd0c28f1bc45f1d738a5da414273711a4409).
+
+This is the output message that shows the failure of the code.
+
+```
+PS C:\Users\heter\Documents\GitHub\markdown-parse> java MarkdownParse newtest-file.md
+[are we sure]
+```
+
+The issue with the code this time around is that it will add whatever is in the parentheses even if they are not links. This is because there is no check on if the link is valid, only if there is not a ! in the front. To fix this, I added a check with contains() to make sure there is no spaces in the parentheses as it should be a link. If there is, it will not be returned.
