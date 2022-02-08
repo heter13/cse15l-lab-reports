@@ -61,4 +61,4 @@ PS C:\Users\heter\Documents\GitHub\markdown-parse> java MarkdownParse newtest-fi
 [are we sure]
 ```
 
-The issue with the code this time around is that it will add whatever is in the parentheses even if they are not links. This is because there is no check on if the link is valid, only if there is not a ! in the front. To fix this, I added a check with contains() to make sure there is no spaces in the parentheses as it should be a link. If there is, it will not be returned.
+The issue with the code this time around is that it will add whatever is in the parentheses even if they are not links. This is because there is no check on if the link is valid, only if there is not a ! in the front. To fix this, I added a check with contains() to make sure there is no spaces in the parentheses as it should be a link. If there is, it will not be returned. Since the other link contains the ! for an image link, it is also not returned.
